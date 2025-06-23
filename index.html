@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuralFlow AI - Advanced AI Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Animated Background -->
+        <div class="animated-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+                <div class="shape shape-6"></div>
+                <div class="shape shape-7"></div>
+                <div class="shape shape-8"></div>
+            </div>
+            <div class="gravity-particles">
+                <div class="particle particle-1"></div>
+                <div class="particle particle-2"></div>
+                <div class="particle particle-3"></div>
+                <div class="particle particle-4"></div>
+                <div class="particle particle-5"></div>
+                <div class="particle particle-6"></div>
+                <div class="particle particle-7"></div>
+                <div class="particle particle-8"></div>
+                <div class="particle particle-9"></div>
+                <div class="particle particle-10"></div>
+                <div class="particle particle-11"></div>
+                <div class="particle particle-12"></div>
+                <div class="particle particle-13"></div>
+                <div class="particle particle-14"></div>
+                <div class="particle particle-15"></div>
+                <div class="particle particle-16"></div>
+                <div class="particle particle-17"></div>
+                <div class="particle particle-18"></div>
+                <div class="particle particle-19"></div>
+                <div class="particle particle-20"></div>
+            </div>
+            <div class="gradient-overlay"></div>
+        </div>
+
+        <!-- Home Page -->
+        <div id="homePage" class="home-page">
+            <nav class="home-nav">
+                <div class="nav-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-brain"></i>
+                        <div class="pulse-ring"></div>
+                    </div>
+                    <span>NeuralFlow AI</span>
+                </div>
+                <div class="nav-actions">
+                    <button class="theme-toggle" onclick="toggleTheme()">
+                        <i class="fas fa-sun theme-icon"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="home-content">
+                <div class="hero-section">
+                    <div class="hero-visual">
+                        <div class="brain-container">
+                            <div class="brain-core">
+                                <i class="fas fa-brain"></i>
+                                <div class="brain-glow"></div>
+                                <div class="synapse synapse-1"></div>
+                                <div class="synapse synapse-2"></div>
+                                <div class="synapse synapse-3"></div>
+                                <div class="synapse synapse-4"></div>
+                            </div>
+                            <div class="orbit-ring orbit-1">
+                                <div class="orbit-particle"></div>
+                            </div>
+                            <div class="orbit-ring orbit-2">
+                                <div class="orbit-particle"></div>
+                            </div>
+                            <div class="orbit-ring orbit-3">
+                                <div class="orbit-particle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="title-line">Welcome to the</span>
+                            <span class="title-highlight">Future of AI</span>
+                        </h1>
+                        <p class="hero-subtitle">Experience conversations that feel human, powered by advanced neural networks and cutting-edge artificial intelligence.</p>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="99">0</div>
+                                <div class="stat-label">Accuracy</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="50">0</div>
+                                <div class="stat-label">Languages</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="24">0</div>
+                                <div class="stat-label">Hours</div>
+                            </div>
+                        </div>
+
+                        <button class="enter-ai-btn" onclick="enterAI()">
+                            <span class="btn-text">Enter NeuralFlow AI</span>
+                            <div class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <div class="btn-glow"></div>
+                            <div class="btn-particles">
+                                <div class="btn-particle"></div>
+                                <div class="btn-particle"></div>
+                                <div class="btn-particle"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="features-section">
+                    <h2 class="section-title">Why Choose NeuralFlow AI?</h2>
+                    <div class="features-grid">
+                        <div class="feature-card" data-aos="fade-up">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <h3>Lightning Fast</h3>
+                            <p>Get instant responses with our optimized neural network architecture</p>
+                        </div>
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <h3>Secure & Private</h3>
+                            <p>Your conversations are protected with enterprise-grade security</p>
+                        </div>
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="feature-icon">
+                                <i class="fas fa-magic"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <h3>Advanced AI</h3>
+                            <p>Powered by the latest breakthroughs in artificial intelligence</p>
+                        </div>
+                        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <h3>Human-like</h3>
+                            <p>Conversations that feel natural and engaging</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="capabilities-section">
+                    <h2 class="section-title">What Can NeuralFlow AI Do?</h2>
+                    <div class="capabilities-grid">
+                        <div class="capability-item">
+                            <div class="capability-icon">
+                                <i class="fas fa-pen-fancy"></i>
+                            </div>
+                            <div class="capability-content">
+                                <h3>Creative Writing</h3>
+                                <p>Generate stories, poems, and creative content</p>
+                            </div>
+                        </div>
+                        <div class="capability-item">
+                            <div class="capability-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="capability-content">
+                                <h3>Programming Help</h3>
+                                <p>Get assistance with coding and debugging</p>
+                            </div>
+                        </div>
+                        <div class="capability-item">
+                            <div class="capability-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="capability-content">
+                                <h3>Learning Assistant</h3>
+                                <p>Learn new concepts and get explanations</p>
+                            </div>
+                        </div>
+                        <div class="capability-item">
+                            <div class="capability-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="capability-content">
+                                <h3>Data Analysis</h3>
+                                <p>Analyze data and create insights</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Interface -->
+        <div id="chatInterface" class="chat-interface" style="display: none;">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-brain"></i>
+                            <div class="pulse-ring"></div>
+                        </div>
+                        <span>NeuralFlow AI</span>
+                    </div>
+                    <button class="new-chat-btn" onclick="startNewChat()">
+                        <i class="fas fa-plus"></i>
+                        <span>New Chat</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+                
+                <div class="chat-history" id="chatHistory">
+                    <!-- Chat history items will be dynamically added here -->
+                </div>
+                
+                <div class="sidebar-footer">
+                    <button class="theme-toggle" onclick="toggleTheme()">
+                        <i class="fas fa-sun theme-icon"></i>
+                        <span id="themeText">Light Mode</span>
+                        <div class="toggle-glow"></div>
+                    </button>
+                    <button class="settings-btn" onclick="toggleSettings()">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <header class="chat-header">
+                    <div class="header-left">
+                        <button class="menu-btn" onclick="toggleSidebar()">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <button class="back-home-btn" onclick="showHomePage()" title="Back to Home">
+                            <i class="fas fa-home"></i>
+                        </button>
+                        <h1 id="currentChatTitle">NeuralFlow AI</h1>
+                        <div class="status-indicator">
+                            <div class="status-dot"></div>
+                            <span>Online</span>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="model-selector">
+                            <i class="fas fa-crown"></i>
+                            <span>NeuralFlow Pro</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="chat-container">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="welcome-screen">
+                            <div class="welcome-content">
+                                <div class="welcome-icon">
+                                    <div class="icon-container">
+                                        <i class="fas fa-brain"></i>
+                                        <div class="icon-glow"></div>
+                                    </div>
+                                </div>
+                                <h2>How can I help you today?</h2>
+                                <p>I'm NeuralFlow AI, powered by advanced neural networks. Ask me anything!</p>
+                                
+                                <div class="suggestion-grid">
+                                    <button class="suggestion-btn" onclick="sendSuggestion('Write a creative story about a robot learning to paint')">
+                                        <div class="suggestion-icon">
+                                            <i class="fas fa-palette"></i>
+                                        </div>
+                                        <div class="suggestion-content">
+                                            <span class="suggestion-title">Creative Writing</span>
+                                            <span class="suggestion-desc">Write a creative story about a robot learning to paint</span>
+                                        </div>
+                                        <div class="suggestion-glow"></div>
+                                    </button>
+                                    <button class="suggestion-btn" onclick="sendSuggestion('Explain quantum computing in simple terms')">
+                                        <div class="suggestion-icon">
+                                            <i class="fas fa-atom"></i>
+                                        </div>
+                                        <div class="suggestion-content">
+                                            <span class="suggestion-title">Science Explained</span>
+                                            <span class="suggestion-desc">Explain quantum computing in simple terms</span>
+                                        </div>
+                                        <div class="suggestion-glow"></div>
+                                    </button>
+                                    <button class="suggestion-btn" onclick="sendSuggestion('Help me plan a weekend trip to the mountains')">
+                                        <div class="suggestion-icon">
+                                            <i class="fas fa-mountain"></i>
+                                        </div>
+                                        <div class="suggestion-content">
+                                            <span class="suggestion-title">Travel Planning</span>
+                                            <span class="suggestion-desc">Help me plan a weekend trip to the mountains</span>
+                                        </div>
+                                        <div class="suggestion-glow"></div>
+                                    </button>
+                                    <button class="suggestion-btn" onclick="sendSuggestion('Write a professional email to schedule a meeting')">
+                                        <div class="suggestion-icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="suggestion-content">
+                                            <span class="suggestion-title">Professional Writing</span>
+                                            <span class="suggestion-desc">Write a professional email to schedule a meeting</span>
+                                        </div>
+                                        <div class="suggestion-glow"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-input-container">
+                        <div class="input-wrapper">
+                            <div class="input-box">
+                                <div class="input-prefix">
+                                    <i class="fas fa-comment"></i>
+                                </div>
+                                <textarea 
+                                    id="chatInput" 
+                                    placeholder="Ask NeuralFlow AI anything..." 
+                                    rows="1"
+                                    onkeydown="handleKeyDown(event)"
+                                ></textarea>
+                                <button id="sendButton" class="send-button" onclick="sendMessage()">
+                                    <i class="fas fa-paper-plane"></i>
+                                    <div class="send-glow"></div>
+                                </button>
+                            </div>
+                            <div class="input-footer">
+                                <span class="disclaimer">NeuralFlow AI can make mistakes. Consider checking important information.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Settings Panel -->
+        <div id="settingsPanel" class="settings-panel">
+            <div class="settings-header">
+                <h3>AI Settings</h3>
+                <button class="close-btn" onclick="toggleSettings()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="settings-content">
+                <div class="setting-group">
+                    <label for="aiPersonality">AI Personality</label>
+                    <select id="aiPersonality" class="setting-input">
+                        <option value="helpful">Helpful & Friendly</option>
+                        <option value="creative">Creative & Imaginative</option>
+                        <option value="professional">Professional & Formal</option>
+                        <option value="casual">Casual & Conversational</option>
+                        <option value="humorous">Humorous & Witty</option>
+                        <option value="detailed">Detailed & Analytical</option>
+                    </select>
+                </div>
+                
+                <div class="setting-group">
+                    <label for="responseLength">Response Length</label>
+                    <select id="responseLength" class="setting-input">
+                        <option value="short">Short & Concise</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="long">Long & Detailed</option>
+                    </select>
+                </div>
+                
+                <div class="setting-group">
+                    <label for="creativity">Creativity Level: <span id="creativityValue">0.9</span></label>
+                    <input type="range" id="creativity" min="0" max="1" step="0.1" value="0.9" class="setting-slider">
+                </div>
+                
+                <div class="setting-group">
+                    <label for="customPrompt">Custom Instructions</label>
+                    <textarea id="customPrompt" class="setting-textarea" placeholder="Add custom instructions for the AI..."></textarea>
+                </div>
+                
+                <button id="saveSettings" class="save-btn" onclick="saveSettings()">
+                    <span>Save Settings</span>
+                    <div class="save-glow"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
